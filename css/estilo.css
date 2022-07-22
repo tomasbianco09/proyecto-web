@@ -1,0 +1,1104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Seccion Nav */
+header {
+    position: sticky;
+    top: 0%;
+    grid-area: nav;
+    z-index: 2;
+}
+
+.navBar {
+    background-color: #c2c5aa;
+    width: 100%;
+    height: 80px;
+    /* text-align: left; */
+    position: sticky;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.navegacionNav {
+    background-color: #c2c5aa;
+    padding: 25px 50px 25px 0;
+    display: flex;
+}
+
+.navLogo img{
+    margin: 0px 0 25px 5px;
+    width: 90px;
+    height: 80px;
+}
+
+
+li {
+    list-style-type: none;
+    /* display: inline; */
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+li a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor {
+    width: 100%;
+    max-height: 1000px;
+}
+
+/* Seccion sobre nosotros */
+
+.tituloNosotros {
+    background-color: white;
+    /* width: 100%;
+    height: 30%; */
+    margin: 0 0 20px 0;
+    grid-area: nosotros;
+}
+
+.tituloNosotros h1 {
+    text-align: center;
+    font-size: 50px;
+    padding: 20px 0 20px 0;
+}
+
+.sobreNosotros {
+    display: flex;
+}
+
+.sobreNosotros img {
+    width: 30%;
+    height: 30%;
+    box-shadow: 0 0 5px grey ;
+    margin: 0 50px 0 0;
+}
+
+.sobreNosotros p {
+    text-align: left;
+    margin: 0 50px 0 50px;
+    font-size: 20px;
+}
+
+/* Seccion clientes */
+
+.tituloClientes {
+    background-color: white;
+    width: 100%;
+    height: 30%;
+    margin: 50px 0 20px 0;
+    grid-area: cliente;
+}
+
+.tituloClientes h2{
+    text-align: center;
+    font-size: 50px;
+    padding: 0 0 80px 0;
+    /* margin: 0 0 80px 0; */
+}
+
+.clientes {
+    text-align: center;
+    display: flex;
+}
+
+.clientes img {
+    width: 300px;
+    box-shadow: 0 0 20px grey ;
+}
+
+.clientes p {
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 30px 80px 30px;
+    /* margin: 20px 0 80px 0 */
+}
+
+/* Seccion Nuestros Productos */
+
+.productosGrid {
+    grid-area: productos;
+}
+
+.tituloNuestroP {
+    background-color: white;
+    width: 100%;
+    height: 10%;
+    margin: 30px 0 30px 0;
+}
+
+.tituloNuestroP h1{
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.tituloNuestroP p{
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.productoPrincipal {
+    background-color: white;
+    width: 70%;
+    height: 45%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.producto {
+    background-color: white;
+    height: 380px;
+    width: 380px;
+    margin: auto;
+    box-shadow: 0 0 20px grey;
+}
+
+.itemUno {
+    margin: 0 0 30px 0;
+}
+
+.itemUno img{
+    width: 300px;
+    border: #414141 1px solid;
+    margin: 0 0 20px 40px;
+    position: block;
+}
+.itemUno h2{
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+}
+
+.itemUno p {
+    text-align: center;
+}
+
+.itemDos {
+    margin: 0 0 30px 0;
+}
+
+.itemDos img{
+    width: 300px;
+    border: #414141 1px solid;
+    margin: 0 0 20px 40px;
+    position: block;
+}
+
+.itemDos h2{
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+}
+
+.itemDos p {
+    text-align: center;
+}
+
+/* Seccion servicios */
+
+.serviciosGrid {
+    grid-area: servicios;
+}
+
+.serviciosTitulo {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    margin: 30px 0 30px 0;
+}
+
+.serviciosTitulo h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+
+.serviciosItems h2{
+    font-size: 30px;
+    text-align: justify;
+    margin: 0 0 20px 50px;
+}
+
+.serviciosMantenimiento {
+    display: flex;
+}
+
+.serviciosMantenimiento a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.serviciosMantenimiento img {
+    width: 400px;
+    box-shadow: 0 0 5px grey ;
+    margin: 0 200px 50px 50px;
+}
+
+.serviciosMantenimiento p {
+    font-size: 20px;
+    margin: 0 0 0 30px;
+}
+
+.serviciosAtencion {
+    display: flex;
+}
+
+.serviciosAtencion img{
+    width: 400px;
+    box-shadow: 0 0 5px grey ;
+    margin: 0 200px 50px 50px;
+}
+
+.serviciosAtencion {
+    font-size: 20px;
+    margin: 0 0 0 30px;
+}
+
+/* Seccion de Ubicacion */
+
+.ubicacionGrid {
+    grid-area: ubicacion;
+}
+
+.ubicaacionTexts {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    margin: 30px 0 30px 0;
+}
+
+.ubicacionTexts h1{
+    text-align: center;
+    font-size: 50px;
+    /* padding-top: 30px; */
+    margin: 10px 0 30px 0;
+}
+
+.ubicacionTexts p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.ubicacionMaps {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.googleMaps {
+    width: 50%;
+   
+}
+
+/* Seccion de contacto */
+
+.contactoGrid {
+    grid-area: contacto;
+}
+
+.contactoPage {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    margin: 30px 0 30px 0;
+}
+
+.contactTexts h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.contactTexts p {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+.formContact {
+    width: 25%;
+    background-color: #24303c;
+    padding: 60px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 4px 4px 4px #000;
+}
+
+.formContact h2{
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.cajas {
+    width: 95%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    border: 1px solid white;
+    font-size: 18px;
+    color: white;
+}
+
+
+.formContact .boton {
+    width: 100%;
+    background: #c2c5aa;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+/* Seccion footer */
+
+footer {
+    background: #414141;
+    padding: 20px 0 0 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    grid-area: footer;
+}
+
+.contenedor-footer {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 20px;
+    border-bottom:  1px solid #ccc;
+}
+
+.contenido-footer h3 {
+    color: white;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid rgb(93, 93, 233);
+}
+
+.contenido-footer p{
+    color: #cccccc;
+}
+
+.contenido-footer img {
+    width: 30px;
+    padding: 5px;
+}
+
+.tituloFinal {
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 10px 0 0 0;
+    color: #9e9797;
+}
+
+.bodyPadreGrid {
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "nosotros"
+    "cliente"
+    "footer"
+    ;
+}
+
+.bodyPadreGridProductos {
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "productos"
+    "footer"
+    ;
+}
+
+.bodyPadreGridService {
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "servicios"
+    "footer";
+}
+
+.bodyPadreGridUbi {
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "ubicacion"
+    "footer";
+}
+
+.bodyPadreGridContact {
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "contacto"
+    "footer";
+}
+
+@media screen and (max-width: 1440px) {
+    
+    header {
+        position: sticky;
+        top: 0%;
+        grid-area: nav;
+        z-index: 2;
+    }
+    
+    .navBar {
+        background-color: #c2c5aa;
+        width: 100%;
+        height: 80%;
+        position: sticky;
+        top: 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    
+    .navegacionNav {
+        background-color: #c2c5aa;
+        padding: 25px 10px 10px 0;
+        display: flex;
+    }
+    
+    .navLogo img{
+        margin: 10px 0 25px 5px;
+        width: 50px;
+        height: 40px;
+    }
+    
+    
+    li {
+        list-style-type: none;
+        display: inline; 
+        font-size: 10px;
+        font-weight: bold;
+        color: black;
+    }
+    
+    li a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: black;
+    } 
+
+    /* Nuestro producto */
+
+    .tituloNuestroP {
+        background-color: white;
+        width: 100%;
+        height: 10%;
+        margin: 30px 0 30px 0;
+    }
+
+    .tituloNuestroP h1{
+        text-align: center;
+        font-size: 50px;
+        padding-bottom: 20px;
+    }
+
+    .tituloNuestroP p{
+        text-align: center;
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .productoPrincipal {
+        background-color: white;
+        width: 70%;
+        height: 45%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .producto {
+        background-color: white;
+        height: 280px;
+        width: 280px;
+        margin: auto;
+        box-shadow: 0 0 20px grey;
+    }
+
+    .itemUno {
+        margin: 0 0 30px 0;
+    }
+
+    .itemUno img{
+        width: 200px;
+        border: #414141 1px solid;
+        margin: 0 0 20px 40px;
+        position: block;
+    }
+    .itemUno h2{
+        text-align: center;
+        font-size: 20px;
+        margin: 10px 0 10px 0;
+    }
+
+    .itemUno p {
+        text-align: center;
+    }
+
+    .itemDos {
+        margin: 0 0 30px 0;
+    }
+
+    .itemDos img{
+        width: 200px;
+        border: #414141 1px solid;
+        margin: 0 0 20px 40px;
+        position: block;
+    }
+
+    .itemDos h2{
+        text-align: center;
+        font-size: 20px;
+        margin: 10px 0 10px 0;
+    }
+
+    .itemDos p {
+        text-align: center;
+    }
+
+    /* Seccion servicios */
+
+    .serviciosTitulo {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        margin: 30px 0 30px 0;
+    }
+
+    .serviciosTitulo h1{
+        font-size: 50px;
+        text-align: center;
+    }
+
+
+    .serviciosItems h2{
+        font-size: 30px;
+        text-align: justify;
+        margin: 0 0 20px 50px;
+    }
+
+    .serviciosMantenimiento {
+        display: flex;
+    }
+
+    .serviciosMantenimiento a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .serviciosMantenimiento img {
+        width: 200px;
+        box-shadow: 0 0 5px grey ;
+        margin: 0 200px 50px 50px;
+    }
+
+    .serviciosMantenimiento p {
+        font-size: 20px;
+    }
+
+    .serviciosAtencion {
+        display: flex;
+    }
+
+    .serviciosAtencion img{
+        width: 220px;
+        height: 200px;
+        box-shadow: 0 0 5px grey ;
+        margin: 0 200px 50px 120px;
+    }
+
+    .serviciosAtencion p{
+        font-size: 20px;
+    }
+
+    /* Seccion de Ubicacion */
+
+    .ubicaacionTexts {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        margin: 30px 0 30px 0;
+    }
+
+    .ubicacionTexts h1{
+        text-align: center;
+        font-size: 50px;
+        padding-top: 30px;
+    }
+
+    .ubicacionTexts p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .ubicacionMaps {
+        display: flex;
+        margin: 60px 0 60px 0;
+        justify-content: center;
+    }
+
+    /* Seccion footer */
+
+    footer {
+        background: #414141;
+        padding: 20px 0 0 0;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        grid-area: footer;
+    }
+
+    .contenedor-footer {
+        display: flex;
+        text-align: center;
+        width: 100%;
+        justify-content: space-evenly;
+        margin: auto;
+        padding-bottom: 20px;
+        border-bottom:  1px solid #ccc;
+    }
+
+    .contenido-footer h3 {
+        color: white;
+        font-size: 15px;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        border-bottom: 3px solid rgb(93, 93, 233);
+    }
+
+    .contenido-footer p{
+        color: #cccccc;
+    }
+
+    .contenido-footer img {
+        width: 25px;
+        padding: 5px;
+    }
+
+    .tituloFinal {
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin: 10px 0 0 0;
+        color: #9e9797;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        position: sticky;
+        top: 0%;
+        grid-area: nav;
+        z-index: 2;
+    }
+    
+    .navBar {
+        background-color: #c2c5aa;
+        width: 100%;
+        height: 80%;
+        position: sticky;
+        top: 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    
+    .navegacionNav {
+        background-color: #c2c5aa;
+        padding: 25px 10px 10px 0;
+        display: flex;
+    }
+    
+    .navLogo img{
+        margin: 10px 0 25px 5px;
+        width: 50px;
+        height: 40px;
+    }
+    
+    
+    li {
+        list-style-type: none;
+        display: inline; 
+        font-size: 10px;
+        font-weight: bold;
+        color: black;
+    }
+    
+    li a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: black;
+    } 
+    
+    /* Seccion sobre nosotros */
+    
+    .tituloNosotros {
+        background-color: white;
+        width: 100%;
+        height: 45%;
+        margin: 0 0 20px 0;
+        grid-area: nosotros;
+    }
+    
+    .tituloNosotros h1 {
+        text-align: center;
+        font-size: 20px;
+        padding: 20px 0 20px 0;
+    }
+    
+    .sobreNosotros {
+        display: flex;
+    }
+    
+    .sobreNosotros img {
+        display: none !important;
+    }
+    
+    .sobreNosotros p {
+        text-align: left;
+        margin: 0 50px 0 50px;
+        font-size: 10px;
+    }
+    
+    /* Seccion clientes */
+    
+    .tituloClientes {
+        background-color: white;
+        width: 100%;
+        height: 10%;
+        margin: 50px 0 20px 0;
+        grid-area: cliente;
+    }
+    
+    .tituloClientes h2{
+        text-align: center;
+        font-size: 20px;
+        padding: 0 0 50px 0;
+        /* margin: 0 0 80px 0; */
+    }
+    
+    .clientes {
+        text-align: center;
+        display: flex;
+    }
+    
+    .clientes img {
+        width: 120px;
+        box-shadow: 0 0 20px grey ;
+    }
+    
+    .clientes p {
+        text-align: center;
+        font-size: 10px;
+        padding: 20px 0 50px 0;
+        /* margin: 20px 0 80px 0; */
+    }
+    
+    /* Seccion Nuestros Productos */
+
+    .tituloNuestroP {
+        background-color: white;
+        width: 100%;
+        height: 150px;
+        margin: auto;
+    }
+    
+    .tituloNuestroP h1{
+        text-align: center;
+        font-size: 20px;
+        padding: 20px 0 20px 0;
+    }
+    
+    .tituloNuestroP p{
+        text-align: center;
+        font-size: 18px;
+    }
+    
+    .productoPrincipal {
+        /* background-color: #f7e6ed; */
+        background-color: white;
+        width: 100%;
+        height: 45%;
+        margin: 0 0 0 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-bottom: 30px;
+    }
+    
+    .producto {
+        background-color: white;
+        height: 280px;
+        width: 280px;
+        margin: auto;
+        box-shadow: 0 0 20px grey;
+    }
+    
+    .itemUno {
+        margin: 0 0 30px 0;
+    }
+    
+    .itemUno img{
+        width: 200px;
+        border: #414141 1px solid;
+        margin: 0 40px 20px 40px;
+        position: block;
+    }
+    .itemUno h2{
+        text-align: center;
+        font-size: 20px;
+        margin: 10px 0 10px 0;
+    }
+    
+    .itemUno p {
+        text-align: center;
+    }
+    
+    .itemDos {
+        margin: 0 0 30px 0;
+    }
+    
+    .itemDos img{
+        width: 200px;
+        border: #414141 1px solid;
+        margin: 0 40px 20px 40px;
+        position: block;
+    }
+    
+    .itemDos h2{
+        text-align: center;
+        font-size: 20px;
+        margin: 10px 0 10px 0;
+    }
+    
+    .itemDos p {
+        text-align: center;
+    }
+
+    /* Seccion servicios */
+
+    .serviciosTitulo {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+
+    .serviciosTitulo h1{
+        font-size: 20px;
+        text-align: center;
+        padding: 20px 0 20px 0;
+    }
+
+
+    .serviciosItems h2{
+        font-size: 15px;
+        text-align: justify;
+        margin: 0 0 10px 50px;
+    }
+
+    .serviciosMantenimiento {
+        display: flex;
+    }
+
+    .serviciosMantenimiento a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .serviciosMantenimiento img {
+        width: 100px;
+        box-shadow: 0 0 5px grey ;
+        margin: 0 30px 50px 50px;
+    }
+
+    .serviciosMantenimiento p {
+        font-size: 10px;
+        margin: 0 0 20px 30px;
+    }
+
+    .serviciosAtencion {
+        display: flex;
+    }
+
+    .serviciosAtencion img{
+        display: none !important;
+    }
+
+    .serviciosAtencion p{
+        font-size: 10px;
+        margin: 0 20px 20px 0;
+    }
+
+    /* Seccion de Ubicacion */
+
+    .ubicaacionTexts {
+        background-color: white;
+        width: 100%;
+        height: 10%;
+        margin: 30px 0 30px 0;
+    }
+
+    .ubicacionTexts h1{
+        text-align: center;
+        font-size: 20px;
+        padding-top: 30px;
+    }
+
+    .ubicacionTexts p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .ubicacionMaps {
+        display: flex;
+        max-width: 700px;
+        justify-content: center;
+    }
+
+    .googleMaps {
+        width: 90%;
+        height: 400px;
+    }
+
+    /* Seccion de contacto */
+
+    .contactoGrid {
+        grid-area: contacto;
+    }
+
+    .contactoPage {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        margin: 30px 0 30px 0;
+    }
+
+    .contactTexts h1 {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .contactTexts p {
+        text-align: center;
+        font-size: 15px;
+        padding-top: 30px;
+    }
+
+    .formContact {
+        width: 200px;
+        height: 450px;
+        background-color: #24303c;
+        padding: 60px;
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 200px;
+        border-radius: 4px;
+        color: white;
+        box-shadow: 4px 4px 4px #000;
+    }
+
+    .formContact h2{
+        margin-bottom: 50px;
+        font-size: 15px;
+    }
+
+    .cajas {
+        width: 95%;
+        background: #24303c;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 40px;
+        border: 1px solid white;
+        font-size: 18px;
+        color: white;
+    }
+
+
+    .formContact .boton {
+        width: 100%;
+        background: #c2c5aa;
+        border: none;
+        padding: 12px;
+        color: white;
+        margin: 16px 0;
+        font-size: 16px;
+    }
+
+    /* Seccion footer */
+
+    .contenedor-footer {
+        flex-direction: column;
+        border: none;
+    }
+    
+    .contenido-footer {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .contenido-footer h3 {
+        border: none;
+        font-size: 15px;
+    }
+    
+    .contenido-footer {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .contenido-footer p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+
+    .contenido-footer img {
+        width: 30px;
+        padding: 10px;
+        border-bottom: 1px solid #f2f2f2;
+    }
+    
+    .tituloFinal {
+        font-size: 20px;
+    }
+}
