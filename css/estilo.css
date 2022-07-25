@@ -143,7 +143,33 @@ nav {
     padding-bottom: 20px;
 }
 
-.producto {
+.carousel {
+    margin: 50px 25% 50px 25%;
+    width: 50%;
+    box-shadow: 0 0 10px #24303c;
+}
+
+.carousel img {
+    opacity: 0.9;
+}
+
+.carousel a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.carousel p {
+    margin: 5px 5px 20px 5px;
+}
+
+.carousel-caption {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+/* .producto {
     background-color: white;
     height: 380px;
     width: 380px;
@@ -190,7 +216,7 @@ nav {
 
 .itemDos p {
     text-align: center;
-}
+} */
 
 /* Seccion servicios */
 
@@ -216,6 +242,7 @@ nav {
     text-align: justify;
     margin: 0 0 20px 50px;
 }
+
 
 .serviciosMantenimiento {
     display: flex;
@@ -252,6 +279,8 @@ nav {
     font-size: 20px;
     margin: 0 0 0 30px;
 }
+
+
 
 /* Seccion de Ubicacion */
 
@@ -761,6 +790,32 @@ footer {
         margin: 30px 0 30px 0;
     }
 
+    .carousel {
+        margin: 90px 10% 50px 10%;
+        width: 80%;
+        box-shadow: 0 0 10px #24303c;
+    }
+    
+    .carousel img {
+        opacity: 0.9;
+    }
+    
+    .carousel a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .carousel p {
+        margin: 5px 5px 20px 5px;
+    }
+    
+    .carousel-caption {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
     /* Seccion de Ubicacion */
 
     .ubicaacionTexts {
@@ -1044,68 +1099,31 @@ footer {
         font-size: 18px;
     }
     
-    .productoPrincipal {
-        background-color: #f7e6ed; 
-        background-color: white;
-        width: 100%;
-        height: 45%;
-        margin: 0 0 0 0;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding-bottom: 30px;
+    .carousel {
+        margin: 70px 10% 70px 10%;
+        width: 80%;
+        box-shadow: 0 0 10px #24303c;
     }
     
-    .producto {
-        background-color: white;
-        height: 280px;
-        width: 280px;
-        margin: auto;
-        box-shadow: 0 0 20px grey;
+    .carousel img {
+        opacity: 0.9;
     }
     
-    .itemUno {
-        margin: 0 0 30px 0;
+    .carousel a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: black;
     }
     
-    .itemUno img{
-        width: 200px;
-        border: #414141 1px solid;
-        margin: 0 40px 20px 40px;
-        position: block;
-    }
-    .itemUno h2{
-        text-align: center;
-        font-size: 20px;
-        margin: 10px 0 10px 0;
+    .carousel p {
+        margin: 5px 5px 20px 5px;
     }
     
-    .itemUno p {
-        text-align: center;
+    .carousel-caption {
+        position: relative;
+        left: 0;
+        top: 0;
     }
-    
-    .itemDos {
-        margin: 0 0 30px 0;
-    }
-    
-    .itemDos img{
-        width: 200px;
-        border: #414141 1px solid;
-        margin: 0 40px 20px 40px;
-        position: block;
-    }
-    
-    .itemDos h2{
-        text-align: center;
-        font-size: 20px;
-        margin: 10px 0 10px 0;
-    }
-    
-    .itemDos p {
-        text-align: center;
-    }
-
     /* Seccion servicios */
 
     .serviciosTitulo {
