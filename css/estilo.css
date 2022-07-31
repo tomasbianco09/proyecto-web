@@ -169,54 +169,7 @@ nav {
     top: 0;
 }
 
-/* .producto {
-    background-color: white;
-    height: 380px;
-    width: 380px;
-    margin: auto;
-    box-shadow: 0 0 20px grey;
-}
 
-.itemUno {
-    margin: 0 0 30px 0;
-}
-
-.itemUno img{
-    width: 300px;
-    border: #414141 1px solid;
-    margin: 0 0 20px 40px;
-    position: block;
-}
-.itemUno h2{
-    text-align: center;
-    font-size: 20px;
-    margin: 10px 0 10px 0;
-}
-
-.itemUno p {
-    text-align: center;
-}
-
-.itemDos {
-    margin: 0 0 30px 0;
-}
-
-.itemDos img{
-    width: 300px;
-    border: #414141 1px solid;
-    margin: 0 0 20px 40px;
-    position: block;
-}
-
-.itemDos h2{
-    text-align: center;
-    font-size: 20px;
-    margin: 10px 0 10px 0;
-}
-
-.itemDos p {
-    text-align: center;
-} */
 
 /* Seccion servicios */
 
@@ -237,49 +190,43 @@ nav {
 }
 
 
-.serviciosItems h2{
-    font-size: 30px;
-    text-align: justify;
-    margin: 0 0 20px 50px;
+/* MARKETING CONTENT */
+
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
 }
 
-
-.serviciosMantenimiento {
-    display: flex;
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
 }
 
-.serviciosMantenimiento a {
-    margin-right: 10px;
+  
+  
+/* Featurettes */
+  
+.featurette-divider {
+    margin: 5rem 0; 
+}
+  
+  
+.featurette-heading {
+    letter-spacing: -.0.5rem;
+    margin-top: 15%;
+}
+
+.dos {
+    letter-spacing: -.0.5rem;
+    margin-top: 5%;
+}
+  
+  
+.serv a {
     text-decoration: none;
     color: black;
+    font-weight: bold;
 }
-
-.serviciosMantenimiento img {
-    width: 400px;
-    box-shadow: 0 0 5px grey ;
-    margin: 0 200px 50px 50px;
-}
-
-.serviciosMantenimiento p {
-    font-size: 20px;
-    margin: 0 0 0 30px;
-}
-
-.serviciosAtencion {
-    display: flex;
-}
-
-.serviciosAtencion img{
-    width: 400px;
-    box-shadow: 0 0 5px grey ;
-    margin: 0 200px 50px 50px;
-}
-
-.serviciosAtencion {
-    font-size: 20px;
-    margin: 0 0 0 30px;
-}
-
 
 
 /* Seccion de Ubicacion */
@@ -521,69 +468,7 @@ footer {
     .tituloNuestroP p{
         text-align: center;
         font-size: 20px;
-        padding-bottom: 10px;
-    }
-
-    .productoPrincipal {
-        background-color: white;
-        width: 70%;
-        height: 45%;
-        margin: auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding-top: 30px;
-        padding-bottom: 20px;
-    }
-
-    .producto {
-        background-color: white;
-        height: 280px;
-        width: 280px;
-        margin: auto;
-        box-shadow: 0 0 20px grey;
-    }
-
-    .itemUno {
-        margin: 0 0 30px 0;
-    }
-
-    .itemUno img{
-        width: 200px;
-        border: #414141 1px solid;
-        margin: 0 0 20px 40px;
-        position: block;
-    }
-    .itemUno h2{
-        text-align: center;
-        font-size: 20px;
-        margin: 10px 0 10px 0;
-    }
-
-    .itemUno p {
-        text-align: center;
-    }
-
-    .itemDos {
-        margin: 0 0 30px 0;
-    }
-
-    .itemDos img{
-        width: 200px;
-        border: #414141 1px solid;
-        margin: 0 0 20px 40px;
-        position: block;
-    }
-
-    .itemDos h2{
-        text-align: center;
-        font-size: 20px;
-        margin: 10px 0 10px 0;
-    }
-
-    .itemDos p {
-        text-align: center;
+        margin-bottom: 90px;
     }
 
     /* Seccion servicios */
@@ -716,6 +601,258 @@ footer {
     }
 }
 
+@media screen and (max-width: 990px) {
+    /* Seccion Nav */
+    header {
+        position: sticky;
+        top: 0%;
+        grid-area: nav;
+        z-index: 2;
+    }
+    
+    nav {
+        width: 100%;
+        height: 80px;
+    }
+    
+
+    .nav-item {
+        margin-bottom: 20px;
+        
+    }
+
+    .nav-item a {
+        margin-top: 20px;
+    }
+
+    .navLogo img{
+        margin: 10px 0 25px 5px;
+        width: 50px;
+        height: 40px;
+        display: none !important;
+    }
+
+    .navbar-toggler {
+        width: 30px;
+        height: 30px;
+        color: #c2c5aa;
+        border: none;
+    }
+
+    .navbar-toggler-icon {
+        width: 30px;
+        height: 30px;
+        margin: -20px;
+    }
+
+    .form-control {
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        background-color: white;
+        border: none;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .btn:hover {
+        background-color: #F1FFE7;
+        color: #000;
+    }
+    
+    .container-fluid {
+        background-color: #c2c5aa;
+    }
+
+    /* Seccion Producto */
+
+    .tituloNuestroP {
+        background-color: white;
+        width: 100%;
+        height: 8%;
+        margin: 30px 0 30px 0;
+    }
+
+    .carousel {
+        margin: 90px 10% 50px 10%;
+        width: 80%;
+        box-shadow: 0 0 10px #24303c;
+    }
+    
+    .carousel img {
+        opacity: 0.9;
+    }
+    
+    .carousel a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .carousel p {
+        margin: 5px 5px 20px 5px;
+    }
+    
+    .carousel-caption {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    /* Seccion servicios */
+
+    .serviciosGrid {
+        grid-area: servicios;
+    }
+
+    .serviciosTitulo {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        margin: 30px 0 30px 0;
+    }
+
+    .serviciosTitulo h1{
+        font-size: 50px;
+        text-align: center;
+    }
+
+
+    /* MARKETING CONTENT */
+
+    .marketing .col-lg-4 {
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .marketing .col-lg-4 p {
+        margin-right: .75rem;
+        margin-left: .75rem;
+    }
+
+    
+    
+    /* Featurettes */
+    
+    .featurette-divider {
+        margin: 5rem 0; 
+    }
+    
+    
+    .featurette-heading {
+        letter-spacing: -.0.5rem;
+        margin-top: 10%;
+    }
+
+    .serv a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    .servimg img {
+        margin-top: 10%;
+    }
+
+    /* Seccion de Ubicacion */
+
+    .ubicaacionTexts {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        margin: 30px 0 30px 0;
+    }
+
+    .ubicacionTexts h1{
+        text-align: center;
+        font-size: 50px;
+        padding-top: 30px;
+    }
+
+    .ubicacionTexts p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .ubicacionMaps {
+        display: flex;
+        margin: 60px 0 60px 0;
+        justify-content: center;
+    }
+
+    .googleMaps {
+        width: 80%;
+       
+    }
+
+    /* Seccion de contacto */
+
+    .contactoGrid {
+        grid-area: contacto;
+    }
+
+    .contactoPage {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        margin: 30px 0 30px 0;
+    }
+
+    .contactTexts h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .contactTexts p {
+        text-align: center;
+        font-size: 20px;
+        padding-top: 30px;
+        margin: 0 10px 0 10px;
+    }
+
+    .formContact {
+        width: 55%;
+        background-color: #24303c;
+        padding: 60px;
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 200px;
+        border-radius: 4px;
+        color: white;
+        box-shadow: 4px 4px 4px #000;
+    }
+
+    .formContact h2{
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+
+    .cajas {
+        width: 95%;
+        background: #24303c;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 40px;
+        border: 1px solid white;
+        font-size: 18px;
+        color: white;
+    }
+
+
+    .formContact .boton {
+        width: 100%;
+        background: #c2c5aa;
+        border: none;
+        padding: 12px;
+        color: white;
+        margin: 16px 0;
+        font-size: 16px;
+}
+
+
+}
+
 @media screen and (max-width: 768px) {
     
     /* Seccion Nav */
@@ -814,6 +951,62 @@ footer {
         position: relative;
         left: 0;
         top: 0;
+    }
+
+    /* Seccion servicios */
+
+    .serviciosGrid {
+        grid-area: servicios;
+    }
+
+    .serviciosTitulo {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        margin: 30px 0 30px 0;
+    }
+
+    .serviciosTitulo h1{
+        font-size: 50px;
+        text-align: center;
+    }
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    .marketing .col-lg-4 {
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .marketing .col-lg-4 p {
+        margin-right: .75rem;
+        margin-left: .75rem;
+    }
+
+    
+    
+    /* Featurettes */
+    
+    .featurette-divider {
+        margin: 5rem 0; 
+    }
+    
+    
+    .featurette-heading {
+        letter-spacing: -.0.5rem;
+        margin-top: 10%;
+    }
+
+    .serv a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    .servimg img {
+        margin-top: 10%;
     }
 
     /* Seccion de Ubicacion */
@@ -1126,58 +1319,60 @@ footer {
     }
     /* Seccion servicios */
 
+    .serviciosGrid {
+        grid-area: servicios;
+    }
+
     .serviciosTitulo {
         background-color: white;
         width: 100%;
         height: 100%;
-        margin: auto;
+        margin: 30px 0 30px 0;
     }
 
     .serviciosTitulo h1{
         font-size: 20px;
         text-align: center;
-        padding: 20px 0 20px 0;
     }
 
 
-    .serviciosItems h2{
-        font-size: 15px;
-        text-align: justify;
-        margin: 0 0 10px 50px;
+    /* MARKETING CONTENT */
+
+
+    .marketing .col-lg-4 {
+        margin-bottom: 1.5rem;
+        text-align: center;
     }
 
-    .serviciosMantenimiento {
-        display: flex;
+    .marketing .col-lg-4 p {
+        margin-right: .75rem;
+        margin-left: .75rem;
     }
 
-    .serviciosMantenimiento a {
-        margin-right: 10px;
+    
+    
+    /* Featurettes */
+    
+    .featurette-divider {
+        margin: 1rem 0; 
+    }
+    
+    
+    .featurette-heading {
+        letter-spacing: -.0.5rem;
+        margin-top: 15%;
+    }
+
+    .dos {
+        letter-spacing: -.0.5rem;
+        margin-top: 5%;
+    }
+    
+    
+    .serv a {
         text-decoration: none;
         color: black;
-    }
-
-    .serviciosMantenimiento img {
-        width: 100px;
-        box-shadow: 0 0 5px grey ;
-        margin: 0 30px 50px 50px;
-    }
-
-    .serviciosMantenimiento p {
-        font-size: 10px;
-        margin: 0 0 20px 30px;
-    }
-
-    .serviciosAtencion {
-        display: flex;
-    }
-
-    .serviciosAtencion img{
-        display: none !important;
-    }
-
-    .serviciosAtencion p{
-        font-size: 10px;
-        margin: 0 20px 20px 0;
+        font-weight: bold;
     }
 
     /* Seccion de Ubicacion */
@@ -1313,3 +1508,4 @@ footer {
         font-size: 20px;
     }
 }
+
