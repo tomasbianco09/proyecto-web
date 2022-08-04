@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import "variables";
 
 * {
   margin: 0;
@@ -53,7 +54,7 @@ nav {
 
   h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: $tam-fuente-titulos;
     padding: 20px 0 20px 0;
   }
 }
@@ -71,7 +72,7 @@ nav {
   p {
     text-align: left;
     margin: 0 50px 0 50px;
-    font-size: 20px;
+    font-size: $tam-fuente-textosp;
   }
 }
 
@@ -86,7 +87,7 @@ nav {
 
   h2 {
     text-align: center;
-    font-size: 50px;
+    font-size: $tam-fuente-titulos;
     padding: 0 0 80px 0;
 
     /* margin: 0 0 80px 0; */
@@ -104,7 +105,7 @@ nav {
 
   p {
     text-align: center;
-    font-size: 20px;
+    font-size: $tam-fuente-textosp;
     padding: 20px 30px 80px 30px;
 
     /* margin: 20px 0 80px 0 */
@@ -129,13 +130,13 @@ nav {
 
   h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: $tam-fuente-titulos;
     padding-bottom: 20px;
   }
 
   p {
     text-align: center;
-    font-size: 20px;
+    font-size: $tam-fuente-textosp;
     padding-bottom: 10px;
   }
 }
@@ -196,7 +197,7 @@ nav {
   margin: 30px 0 30px 0;
 
   h1 {
-    font-size: 50px;
+    font-size: $tam-fuente-titulos;
     text-align: center;
   }
 }
@@ -255,14 +256,14 @@ nav {
 .ubicacionTexts {
   h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: $tam-fuente-titulos;
 
     /* padding-top: 30px; */
     margin: 10px 0 30px 0;
   }
 
   p {
-    font-size: 20px;
+    font-size: $tam-fuente-textosp;
     text-align: center;
   }
 }
@@ -293,12 +294,12 @@ nav {
 .contactTexts {
   h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: $tam-fuente-titulos;
   }
 
   p {
     text-align: center;
-    font-size: 20px;
+    font-size: $tam-fuente-textosp;
     padding-top: 30px;
   }
 }
