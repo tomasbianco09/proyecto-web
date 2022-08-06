@@ -8,11 +8,6 @@ $mapRedes:(itemUno:blue, itemDos:rgb(182, 182, 70), itemTres:rgb(216, 30, 30));
     }
 }
 
-/* Map - Get */
 
 $estilo:(color:rgb(255, 255, 255), posicion:center);
 
-.pepeLePu {
-    background-color: map-get($map: $estilo, $key: color);
-    text-align: map-get($map: $estilo, $key: tamFuente);
-}
