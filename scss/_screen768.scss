@@ -226,59 +226,115 @@
 
   /* Seccion de contacto */
 
+
   .contactoGrid {
     grid-area: contacto;
   }
-
+  
   .contactoPage {
-    background-color: white;
-    width: 100%;
-    height: 100%;
-    margin: 30px 0 30px 0;
+    margin: 0 0 30px 0;
+    background-color: #0c0c0c
   }
-
+  
   .contactTexts {
     h1 {
-      text-align: center;
-      font-size: 50px;
-    }
-
-    p {
-      text-align: center;
-      font-size: 20px;
+      @include titulosh;
       padding-top: 30px;
-      margin: 0 10px 0 10px;
+      color: white;
+      
+    }
+  
+    p {
+      text-align: map-get($map: $estilo, $key: posicion);
+      font-size: $tam-fuente-textosp;
+      padding-top: 30px;
+      color: white;
     }
   }
-
+  
+  .contact {
+    background: #0c0c0c;
+    padding: 20px 0 0 0;
+    margin: auto;
+   
+  }
+  
+  .contenedor-contact {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 40px;
+  }
+  
+  .contenido-contact {
+    h3 {
+      color: #c2c5aa;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+  
+    p {
+      color: #cccccc;
+    }
+  
+    img {
+      width: 50px;
+      padding: 5px;
+      border-radius: 50%;
+    }
+    .redes {
+      border-radius: 0;
+      width: 35px;
+    }
+  
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
   .formContact {
     width: 55%;
-    background-color: #24303c;
-    padding: 60px;
+    background-color: #0c0c0c;
+    padding: 5px 60px 60px 60px;
     margin: auto;
     margin-top: 100px;
     margin-bottom: 200px;
     border-radius: 4px;
     color: white;
-    box-shadow: 4px 4px 4px #000;
-
+  
     h2 {
       margin-bottom: 20px;
       font-size: 22px;
+      text-align: center;
+      font-weight: bold;
     }
   }
-
+  
   .cajas {
-    width: 95%;
-    background: #24303c;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 40px;
-    border: 1px solid white;
-    font-size: 18px;
-    color: white;
-  }
+    width: 100%;
+      background: #141414;
+      border: none;
+      margin-bottom: 20px;
+      padding: 10px;
+      color: white;
+      margin: 16px 0;
+      font-size: 18px;
 
+  }
+  
+  .casilla {
+    width: 100%;
+    height: 200px;
+    background: #141414;
+    border: none;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    margin: 16px 0;
+    font-size: 18px;
+  }
+  
   .formContact .boton {
     width: 100%;
     background: #c2c5aa;
