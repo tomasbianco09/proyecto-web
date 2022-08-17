@@ -232,23 +232,26 @@
   }
   
   .contactoPage {
-    margin: 0 0 30px 0;
-    background-color: #0c0c0c
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    padding-bottom: 30px;
+    background-color: #0c0c0c;
+    border-radius: 10px;
   }
   
   .contactTexts {
     h1 {
       @include titulosh;
       padding-top: 30px;
-      color: white;
+      color: black;
       
     }
-  
     p {
       text-align: map-get($map: $estilo, $key: posicion);
       font-size: $tam-fuente-textosp;
       padding-top: 30px;
-      color: white;
+      color: black;
     }
   }
   
@@ -294,15 +297,15 @@
   }
   
   .formContact {
-    width: 55%;
+    width: 70%;
+    height: 90%;
     background-color: #0c0c0c;
-    padding: 5px 60px 60px 60px;
+    padding: 5px 60px 20px 60px;
     margin: auto;
-    margin-top: 100px;
-    margin-bottom: 200px;
+    margin-top: 30px;
+    margin-bottom: 100px;
     border-radius: 4px;
     color: white;
-  
     h2 {
       margin-bottom: 20px;
       font-size: 22px;
@@ -345,43 +348,4 @@
     font-size: 16px;
   }
 
-  /* Seccion footer */
-
-  .contenedor-footer {
-    display: flex;
-    text-align: center;
-    width: 100%;
-    justify-content: space-evenly;
-    margin: auto;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ccc;
-  }
-
-  .contenido-footer {
-    h3 {
-      color: white;
-      font-size: 15px;
-      padding-bottom: 5px;
-      margin-bottom: 10px;
-
-    }
-
-    p {
-      color: #cccccc;
-    }
-
-    img {
-      width: 35px;
-      padding: 5px;
-    }
-  }
-
-  .tituloFinal {
-    font-size: 20px;
-    text-align: center;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    margin: 10px 0 0 0;
-    color: #9e9797;
-  }
 }

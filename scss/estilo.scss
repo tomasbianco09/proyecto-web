@@ -179,6 +179,8 @@ nav {
   margin: 50px 25% 50px 25%;
   width: 50%;
   box-shadow: 0 0 10px #24303c;
+ 
+  
 
   img {
     opacity: 0.9;
@@ -194,12 +196,12 @@ nav {
     margin: 5px 5px 20px 5px;
   }
 }
-
-.carousel-caption {
-  position: relative;
-  left: 0;
-  top: 0;
-}
+  .carousel-caption {
+    background-color: #9e9797;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
 
 /* Fin de Productos */
 
@@ -299,26 +301,28 @@ nav {
   grid-area: contacto;
 }
 
-.contactoPage {
-  @extend .extendAgg;
-  margin: 0 0 30px 0;
-  background-color: #0c0c0c
-}
-
 .contactTexts {
   h1 {
     @include titulosh;
     padding-top: 30px;
-    color: white;
+    color: black;
     
   }
-
   p {
     text-align: map-get($map: $estilo, $key: posicion);
     font-size: $tam-fuente-textosp;
     padding-top: 30px;
-    color: white;
+    color: black;
   }
+}
+
+.contactoPage {
+  width: 60%;
+  height: 80%;
+  margin: auto;
+  padding-bottom: 30px;
+  background-color: #0c0c0c;
+  border-radius: 10px;
 }
 
 .contact {
@@ -338,10 +342,17 @@ nav {
 }
 
 .contenido-contact {
+  margin-left: 40px;
+  margin-right: 40px;
+
   h3 {
     color: #c2c5aa;
     padding-bottom: 5px;
     margin-bottom: 10px;
+  }
+
+  a {
+    text-decoration: none;
   }
 
   p {
@@ -358,17 +369,16 @@ nav {
     width: 35px;
   }
 
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 .formContact {
-  width: 35%;
+  width: 50%;
+  height: 90%;
   background-color: #0c0c0c;
-  padding: 5px 60px 60px 60px;
+  padding: 5px 60px 20px 60px;
   margin: auto;
-  margin-top: 100px;
-  margin-bottom: 200px;
+  margin-top: 30px;
+  margin-bottom: 100px;
   border-radius: 4px;
   color: white;
 
@@ -377,6 +387,11 @@ nav {
     font-size: 25px;
     text-align: center;
     font-weight: bold;
+  }
+
+  textarea {
+    max-height: 500px;
+    resize: none;
   }
 }
 
@@ -415,50 +430,7 @@ nav {
 
 /* Seccion footer */
 
-footer {
-  background: #414141;
-  padding: 20px 0 0 0;
-  margin: auto;
-  width: 100%;
-  height: 100%;
-  grid-area: footer;
-}
 
-.contenedor-footer {
-  display: flex;
-  text-align: center;
-  width: 100%;
-  justify-content: space-evenly;
-  margin: auto;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #ccc;
-}
-
-.contenido-footer {
-  h3 {
-    color: white;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-    border-bottom: 3px solid rgb(93, 93, 233);
-  }
-
-  p {
-    color: #cccccc;
-  }
-
-  img {
-    width: 40px;
-    padding: 5px;
-  }
-}
-
-.tituloFinal {
-  font-size: 25px;
-  text-align: center;
-  padding-bottom: 10px;
-  margin: 10px 0 0 0;
-  color: #9e9797;
-}
 
 .bodyPadreGrid {
   display: grid;
