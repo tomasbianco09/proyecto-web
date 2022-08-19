@@ -19,7 +19,8 @@
   padding: 0; }
 
 body {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden; }
 
 /* Comienzo de Inicio */
 /* Seccion Nav */
@@ -27,7 +28,41 @@ header {
   position: sticky;
   top: 0%;
   grid-area: nav;
-  z-index: 2; }
+  z-index: 2;
+  width: 100%;
+  height: 700px;
+  background: #c2c5aa;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgba(194, 197, 170, 0.5), white), url(../img/fondo.jpg);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(194, 197, 170, 0.5), white), url(../img/fondo.jpg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; }
+  header .textos-header {
+    display: flex;
+    height: 500px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; }
+
+.textos-header h1 {
+  font-size: 50px;
+  color: black;
+  font-weight: bold; }
+
+.textos-header h2 {
+  font-size: 30px;
+  font-weight: 300;
+  color: black; }
+
+.wave {
+  position: absolute;
+  width: 100%;
+  padding-bottom: 20px; }
 
 nav {
   width: 100%;
@@ -352,7 +387,38 @@ nav {
     position: sticky;
     top: 0%;
     grid-area: nav;
-    z-index: 2; }
+    z-index: 2;
+    width: 100%;
+    height: 700px;
+    background: #c2c5aa;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(194, 197, 170, 0.5), white), url(../img/fondo.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(194, 197, 170, 0.5), white), url(../img/fondo.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative; }
+    header .textos-header {
+      display: flex;
+      height: 500px;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center; }
+  .textos-header h1 {
+    font-size: 50px;
+    color: black;
+    font-weight: bold; }
+  .textos-header h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: black; }
+  .wave {
+    position: absolute;
+    width: 100%;
+    padding-bottom: 20px; }
   nav {
     width: 100%;
     height: 80px; }
@@ -493,10 +559,7 @@ nav {
 @media screen and (max-width: 990px) {
   /* Seccion Nav */
   header {
-    position: sticky;
-    top: 0%;
-    grid-area: nav;
-    z-index: 2; }
+    background-position: center; }
   nav {
     width: 100%;
     height: 80px; }
@@ -635,10 +698,7 @@ nav {
 @media screen and (max-width: 768px) {
   /* Seccion Nav */
   header {
-    position: sticky;
-    top: 0%;
-    grid-area: nav;
-    z-index: 2; }
+    background-position: center; }
   nav {
     width: 100%;
     height: 80px; }
@@ -864,10 +924,14 @@ nav {
 @media screen and (max-width: 480px) {
   /* Seccion Nav */
   header {
-    position: sticky;
-    top: 0%;
-    grid-area: nav;
-    z-index: 2; }
+    background-position: center;
+    height: 600px; }
+    header .textos-header {
+      height: 400px; }
+    header .textos-header h1 {
+      font-size: 30px; }
+    header .textos-header h2 {
+      font-size: 25px; }
   nav {
     width: 100%;
     height: 80px; }

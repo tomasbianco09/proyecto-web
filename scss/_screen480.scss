@@ -2,10 +2,20 @@
   /* Seccion Nav */
 
   header {
-    position: sticky;
-    top: 0%;
-    grid-area: nav;
-    z-index: 2;
+    background-position: center;
+    height: 600px;
+    .textos-header {
+      height: 400px;
+    }
+    .textos-header {
+      h1 {
+        font-size: 30px;
+      }
+    
+      h2 {
+        font-size: 25px;
+      }
+    }
   }
 
   nav {
