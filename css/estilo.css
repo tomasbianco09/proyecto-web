@@ -154,28 +154,16 @@ nav {
   height: 10%;
   margin: 30px 0 30px 0; }
   .tituloNuestroP h1 {
-    font-size: 50px;
     text-align: center;
+    font-size: 50px;
     padding-bottom: 20px; }
   .tituloNuestroP p {
     text-align: center;
     font-size: 20px;
     padding-bottom: 10px; }
 
-.productoPrincipal {
-  background-color: white;
-  width: 70%;
-  height: 45%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding-top: 30px;
-  padding-bottom: 20px; }
-
 .carousel {
-  margin: 50px 25% 50px 25%;
+  margin: 50px 25% 5px 25%;
   width: 50%;
   box-shadow: 0 0 10px #24303c; }
   .carousel img {
@@ -188,34 +176,51 @@ nav {
     margin: 5px 5px 20px 5px; }
 
 .carousel-caption {
-  background-color: #9e9797;
   position: relative;
   left: 0;
   top: 0; }
 
-.products {
-  margin-bottom: 50px; }
-
-.productsTittle {
-  text-align: center;
-  font-size: 50px;
-  margin-bottom: 30px; }
-  .productsTittle p {
-    font-size: 20px; }
-
-.products h6 {
-  font-size: 30px; }
-
-.card-body .btn {
-  background-color: black;
-  border: none; }
-  .card-body .btn:hover {
-    background-color: #F1FFE7;
-    color: #000; }
-
-.card {
-  height: 550px;
-  margin-bottom: 30px; }
+.container {
+  width: 80%;
+  height: 100%;
+  padding-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around; }
+  .container .card {
+    width: 270px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 15px;
+    border: 2px solid crimson;
+    border-radius: 15px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.8); }
+    .container .card .product-image {
+      width: 230px;
+      margin: 20px auto; }
+      .container .card .product-image img {
+        width: 100%;
+        border-radius: 10px;
+        transition: 0.4s; }
+        .container .card .product-image img:hover {
+          transform: scale(1.1); }
+    .container .card .product-info h4 {
+      font-size: 18px;
+      padding: 0 25px;
+      margin-bottom: 10px; }
+    .container .card .btn-p {
+      width: 100%; }
+      .container .card .btn-p button {
+        width: 100%;
+        padding: 10px;
+        background: crimson;
+        border: 1px solid gray;
+        outline: none;
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+        border-radius: 0 0 15px 15px; }
 
 /* Fin de Productos */
 /* Comienzo Servicios */
@@ -387,6 +392,9 @@ nav {
   font-size: 16px; }
 
 /* Seccion footer */
+footer {
+  grid-area: footer; }
+
 .bodyPadreGrid {
   display: grid;
   grid-template-areas: "nav" "nosotros" "cliente" "footer"; }
