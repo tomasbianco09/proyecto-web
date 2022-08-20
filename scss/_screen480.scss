@@ -3,7 +3,6 @@
 
   header {
     background-position: center;
-    height: 600px;
     .textos-header {
       height: 400px;
     }
@@ -16,6 +15,12 @@
         font-size: 25px;
       }
     }
+  }
+
+  .wave {
+    position: absolute;
+    // bottom: 0;
+    width: 100%;
   }
 
   nav {

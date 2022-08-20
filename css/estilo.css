@@ -927,14 +927,16 @@ nav {
 @media screen and (max-width: 480px) {
   /* Seccion Nav */
   header {
-    background-position: center;
-    height: 600px; }
+    background-position: center; }
     header .textos-header {
       height: 400px; }
     header .textos-header h1 {
       font-size: 30px; }
     header .textos-header h2 {
       font-size: 25px; }
+  .wave {
+    position: absolute;
+    width: 100%; }
   nav {
     width: 100%;
     height: 80px; }
