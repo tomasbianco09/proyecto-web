@@ -6,6 +6,20 @@
       top: 0%;
       grid-area: nav;
       z-index: 2;
+
+    
+      .textos-header {
+        display: flex;
+        height: 500px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    .headerDec {
       width: 100%;
       height: 700px;
       background: #c2c5aa;
@@ -20,16 +34,6 @@
       background-size: cover;
       background-attachment: fixed;
       position: relative;
-    
-      .textos-header {
-        display: flex;
-        height: 500px;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-      }
     }
     
     .textos-header {
