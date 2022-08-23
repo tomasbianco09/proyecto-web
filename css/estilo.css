@@ -256,6 +256,27 @@ nav {
         background-color: rgba(194, 197, 170, 0.5);
         color: #000; }
 
+.tittleColecciones {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 30px;
+  box-shadow: 10px 0 10px 0 #c2c5aa; }
+  .tittleColecciones h2 {
+    font-size: 80px; }
+
+.tittleCol {
+  background-color: #c2c5aa;
+  width: 100%;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 10px;
+  margin-bottom: 60px;
+  box-shadow: 10px 0 10px 0 #c2c5aa; }
+  .tittleCol h2 {
+    font-size: 40px; }
+
 /* Fin de Productos */
 /* Comienzo Servicios */
 /* Seccion servicios */
