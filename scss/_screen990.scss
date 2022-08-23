@@ -94,6 +94,47 @@
     top: 0;
   }
 
+  .tittleP {
+    background-color: #c2c5aa;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: 10px 0 10px 0 #c2c5aa;
+  }
+  
+  .contenedor-colecciones {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 40px;
+  }
+  
+  .productsImg {
+    margin-left: 40px;
+    margin-right: 40px;
+  
+    h3 {
+      color: black;
+      margin-bottom: 5px;
+      margin-top: 20px;
+    }
+  
+    img {
+      width: 220px;
+      height: 220px;
+      transition: 0.4s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+   
+  }
+
   /* Seccion servicios */
 
   .serviciosGrid {
