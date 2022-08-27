@@ -452,11 +452,14 @@ nav {
 .ubicacionMaps {
   display: flex;
   justify-content: center;
-  margin: 20px;
+  margin: auto;
+  box-shadow: 0 0 20px grey;
+  width: 70%;
+  height: 90%;
 }
 
 .googleMaps {
-  width: 60%;
+  width:100%;
 }
 
 /* Seccion de contacto */
