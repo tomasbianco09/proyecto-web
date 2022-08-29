@@ -1,4 +1,5 @@
 @media screen and (max-width: 480px) {
+  
   /* Seccion Nav */
 
   header {
@@ -77,7 +78,7 @@
     background-color: #c2c5aa;
   }
 
-  /* Seccion sobre nosotros */
+  /* Seccion Ssobre Nosotros */
 
   .tituloNosotros {
     background-color: white;
@@ -122,7 +123,7 @@
 
   }
 
-  /* Seccion clientes */
+  /* Seccion Clientes */
 
   .tituloClientes {
     background-color: white;
@@ -158,7 +159,7 @@
     }
   }
 
-  /*Seccion Nuestros Productos*/
+  /*Seccion Productos*/
 
   .tituloNuestroP {
     background-color: white;
@@ -245,7 +246,7 @@
    
   }
 
-  /* Seccion servicios */
+  /* Seccion Servicios */
 
   .serviciosGrid {
     grid-area: servicios;
@@ -319,16 +320,19 @@
 
   .ubicacionMaps {
     display: flex;
-    max-width: 700px;
     justify-content: center;
+    margin: auto;
+    box-shadow: 0 0 20px grey;
+    width: 70%;
+    height: 90%;
   }
 
   .googleMaps {
-    width: 90%;
+    width: 100%;
     height: 400px;
   }
 
-  /* Seccion de contacto */
+  /* Seccion de Contacto */
 
   .contactoGrid {
     grid-area: contacto;
